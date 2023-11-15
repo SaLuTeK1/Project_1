@@ -15,13 +15,19 @@ body{
     line-height: 30px;
     color: #0E2F4B;
 }
-/*Head part*/
-header{
-    background-color: rgb(253, 253, 253);
+.font-s24-700-32-blue{
+    color: #0E2F4B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
 }
 .container{
     width: 61%;
     margin: 0 auto;
+}
+/*Head part*/
+header{
+    background-color: rgb(253, 253, 253);
 }
 .head-icon{
     display: flex;
@@ -111,10 +117,6 @@ header .head-links ul{
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-.four-boxes{
-    display: flex;
-    justify-content: space-between;
-}
 .orange-form .four-boxes button{
     display: flex;
     width: 22%;
@@ -136,12 +138,20 @@ header .head-links ul{
     line-height: 20px;
     width: 100px;
 }
+.four-boxes{
+    display: flex;
+    justify-content: space-between;
+}
 .four-boxes .form-icon{
     margin-right: 24px;
 }
-.four-boxes button .fill-change,.four-boxes button .border-change,.four-boxes button .border-change-none {
+
+.four-boxes button .fill-change,
+.four-boxes button .border-change,
+.four-boxes button .border-change-none {
     transition: all 1s ease;
 }
+
 .four-boxes button .full-width{
     width: max-content;
 }
@@ -170,10 +180,13 @@ header .head-links ul{
     transition: all 1s ease;
     opacity: 0;
 }
-.four-boxes button:hover .book-img, .four-boxes button:hover .calc-img{
+
+.four-boxes button:hover .book-img,
+.four-boxes button:hover .calc-img{
     transition: all 1s ease;
     opacity: 0;
 }
+
 .four-boxes button .calc-img{
     background-image: url("img/calculator.svg");
     width: 30px;
@@ -189,9 +202,12 @@ header .head-links ul{
      opacity: 0;
      transition: all 1s ease;
  }
-.four-boxes button:hover .calc-img2,.four-boxes button:hover .book-img2{
+
+.four-boxes button:hover .calc-img2,
+.four-boxes button:hover .book-img2{
     opacity: 1;
 }
+
 /*Services part*/
 .services{
     margin-top: 100px;
@@ -224,7 +240,6 @@ header .head-links ul{
     height: 52px;
     margin-bottom: 0
 }
-
 .services .right-side{
     display: flex;
     justify-content: space-between;
@@ -233,7 +248,6 @@ header .head-links ul{
     width: 65.812%;
     box-sizing: border-box;
 }
-
 .services .right-side a{
     margin-bottom: 30px;
     width: 48.052%;
@@ -250,10 +264,6 @@ header .head-links ul{
     height: 130px;
 }
 .services .right-side h2{
-    color: #0E2F4B;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
     height: 60px;
     margin-bottom: 13px;
     width: 49%;
@@ -295,13 +305,8 @@ header .head-links ul{
     line-height: 60px;
     width: 70%;
 }
-
 .world-business p{
     color: #99A2AA;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
     margin-bottom: 44px;
     width: 31%;
 }
@@ -352,10 +357,6 @@ header .head-links ul{
     margin:52px 75px 40px 75px
 }
 .donation-part .info h2{
-    color: #0E2F4B;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
     height: 60px;
 }
 .donation-part .info p{
@@ -400,10 +401,6 @@ header .head-links ul{
     flex-direction: column;
 }
 .finance-services .three-boxes h2{
-    color: #0E2F4B;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
     height: 60px;
     width: 75%;
     margin-top: 2vw;
@@ -433,6 +430,7 @@ header .head-links ul{
     border-radius: 20px;
     box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
 }
+
 /*Find index part*/
 .find-index{
     background-color: #0e2f4b;
@@ -462,10 +460,6 @@ header .head-links ul{
 }
 .find-index .index-text p{
     color: #99A2AA;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
     margin-bottom: 80px;
     height: 52px;
 }
