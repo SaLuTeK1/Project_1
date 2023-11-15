@@ -1,0 +1,13 @@
+@media  screen and (max-width: 1440px){
+
+    .head-icon{
+        display: flex;
+        padding-top: 25px;
+    }
+    .container{
+        width: 81.25%;
+    }
+    .donation-part .info a{
+        width: 87.17%;
+    }
+}

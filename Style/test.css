@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: #F8F8F8;
+}
+.open-sans-16-400-30h-blue{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #0E2F4B;
+}
+/*Head part*/
+header{
+    background-color: rgb(253, 253, 253);
+}
+.container{
+    width: 61%;
+    margin: 0 auto;
+}
+.head-icon{
+    display: flex;
+    padding-top: 25px;
+}
+header .head-icon img, header .head-icon a{
+    width: 186px;
+    height: 50px;
+}
+header .head-links ul{
+    height: 60px;
+    width: max-content;
+    gap: 29.626px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.head-links{
+    position: relative;
+    top: 10px;
+}
+.head-links li{
+    color: #99A2AA;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 60px;
+    transition: all 0.5s ease;
+}
+.head-links li:hover{
+    color: #3d4e5d;
+}
+/*Orange box part*/
+.orange-box{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 450px;
+    background-color: #fcc424;
+}
+.orange-box-text{
+    min-width: 156px;
+    height: 230px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.orange-box-text h2{
+    color: #FFF;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    height: 112px;
+    width: 30%;
+}
+.orange-box-text p{
+    margin-top: 34px;
+}
+/*Form part*/
+.orange-form{
+    display: flex;
+    height: 212px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+}
+.orange-form form{
+    display: flex;
+    flex-direction: column;
+}
+.orange-form #sending{
+    width: 45%;
+    height: 72px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+    margin-top: 30px;
+    font-size: 16px;
+    padding-left: 35px;
+}
+.orange-form #sending:focus{
+    outline: none;
+}
+.orange-form #sending::placeholder{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.four-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.orange-form .four-boxes button{
+    display: flex;
+    width: 22%;
+    height: 80px;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.orange-form .four-boxes p {
+    color: #99A2AA;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 100px;
+}
+.four-boxes .form-icon{
+    margin-right: 24px;
+}
+.four-boxes button .fill-change,.four-boxes button .border-change,.four-boxes button .border-change-none {
+    transition: all 1s ease;
+}
+.four-boxes button .full-width{
+    width: max-content;
+}
+.four-boxes button:hover .fill-change{
+    fill: #fbc03d;
+}
+.four-boxes button:hover .border-change{
+    fill: #000000;
+    color: #0e2f4b;
+}
+.four-boxes button:hover .border-change-none{
+    stroke: black;
+}
+.four-boxes button .book-img{
+    background-image: url("img/book.svg");
+    width: 30px;
+    height: 30px;
+    transition: all 1s ease;
+}
+.four-boxes button .book-img2{
+    background-image: url("img/book-after.svg");
+    position: absolute;
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    transition: all 1s ease;
+    opacity: 0;
+}
+.four-boxes button:hover .book-img, .four-boxes button:hover .calc-img{
+    transition: all 1s ease;
+    opacity: 0;
+}
+.four-boxes button .calc-img{
+    background-image: url("img/calculator.svg");
+    width: 30px;
+    height: 30px;
+    transition: all 1s ease;
+}
+.four-boxes button .calc-img2{
+     position: absolute;
+     left: 20%;
+     background-image: url("img/calculator-after.svg");
+     width: 30px;
+     height: 30px;
+     opacity: 0;
+     transition: all 1s ease;
+ }
+.four-boxes button:hover .calc-img2,.four-boxes button:hover .book-img2{
+    opacity: 1;
+}
+/*Services part*/
+.services{
+    margin-top: 100px;
+    display: flex;
+    margin-bottom:70px;
+    width: 100%;
+}
+.services .services-box{
+    display: flex;
+}
+.services .left-side{
+    height: 630px;
+    width: 34.1881%;
+}
+.services .left-side h2{
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    height: 117px;
+    margin-top:31px;
+    width: 50%;
+    margin-bottom: 36px;
+}
+.services .left-side p{
+    margin-bottom: 18px;
+    height: 82px;
+}
+.services .left-side #second-text{
+    height: 52px;
+    margin-bottom: 0
+}
+
+.services .right-side{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 65.812%;
+    box-sizing: border-box;
+}
+
+.services .right-side a{
+    margin-bottom: 30px;
+    width: 48.052%;
+    height: 160px;
+    transition: all 0.5s ease-in-out;
+}
+.services .right-side a:hover{
+    border-radius: 20px;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+}
+.services .right-side .box{
+    margin-top:30px;
+    width: 100%;
+    height: 130px;
+}
+.services .right-side h2{
+    color: #0E2F4B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    height: 60px;
+    margin-bottom: 13px;
+    width: 49%;
+    margin-left: 30px;
+}
+.services .right-side .none{
+    width: 80%;
+}
+.services .right-side .height-28{
+    height: 28px;
+}
+.services .right-side p{
+    color: #0E2F4B;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 30px;
+    height: 17px;
+}
+.services .right-side p::after{
+    font-family: "Font Awesome 5 Free" ,sans-serif;
+    content: " ›";
+    color: #0E2F4B;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/*Business part*/
+.world-business{
+    background-color: #042c4b;
+    height:535px;
+    padding-top: 120px;
+}
+.world-business h2{
+    color: #F8F8F8;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    line-height: 60px;
+    width: 70%;
+}
+
+.world-business p{
+    color: #99A2AA;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 44px;
+    width: 31%;
+}
+.world-business button{
+    display: flex;
+    width: 305px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #FDC13D;
+    padding: 0;
+    transition: all 1s ease-in-out;
+}
+.world-business button h2{
+    color: #0E2F4B;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 0;
+    width: max-content;
+}
+.world-business button:hover{
+    background: #fde33d;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 3px 35px 0 rgba(161, 161, 161, 0.2);
+}
+
+/*Donation part*/
+.donation-part{
+    box-sizing: border-box;
+    height: 880px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.donation-part .info{
+    border-radius: 10px;
+    background: #FDC13D;
+    height: 220px;
+    display: flex;
+}
+.donation-part .info a{
+    border-radius: 10px;
+    background: #FDC13D;
+    margin:52px 75px 40px 75px
+}
+.donation-part .info h2{
+    color: #0E2F4B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    height: 60px;
+}
+.donation-part .info p{
+    margin-top: 12px;
+    height: 22px;
+}
+.donation-part .info .more{
+    margin-top: 15px;
+    color: #0E2F4B;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 24px;
+    height: 19px;
+}
+.donation-part .info .more::after{
+    font-family: "Font Awesome 5 Free" ,sans-serif;
+    content: " ›";
+    color: #0E2F4B;
+    font-size: 22px;
+    font-weight: 900;
+}
+.finance-services{
+    margin-top: 121px;
+}
+.finance-services #finance-services-h2{
+    color: #0E2F4B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    height: 57px;
+}
+.finance-services .three-boxes{
+    margin-top: 32px;
+    display: flex;
+}
+.finance-services .three-boxes .box-finance{
+    width: 23.077%;
+    height: 270px;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.finance-services .three-boxes h2{
+    color: #0E2F4B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    height: 60px;
+    width: 75%;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+.finance-services .three-boxes p{
+    color: #0E2F4B;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 2vw;
+    height: 17px;
+    margin-top: 13px;
+}
+.finance-services .three-boxes p::after{
+    font-family: "Font Awesome 5 Free" ,sans-serif;
+    content: " ›";
+    color: #0E2F4B;
+    font-size: 22px;
+    font-weight: 900;
+}
+.donation-part .finance-services .three-boxes .box-finance a{
+    height: 270px;
+    transition: all 1s ease;
+}
+.donation-part .finance-services .three-boxes .box-finance a:hover{
+    border-radius: 20px;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+}
+/*Find index part*/
+.find-index{
+    background-color: #0e2f4b;
+    height: 635px;
+    display: flex;
+    box-sizing: border-box;
+}
+.find-index .index-wrapper{
+    margin-top: 134.5px;
+    background-image: url(https://www.ukrposhta.ua/design/web/images/zip-code-block-background.png);
+    background-repeat: no-repeat;
+    background-size: 1053px 372px;
+    background-position-y: bottom;
+    height: 370px;
+}
+.find-index .index-text{
+    padding-top: 31px;
+    padding-left: 15px;
+}
+.find-index .index-text h2{
+    color: #F8F8F8;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 36px;
+    height: 57px;
+}
+.find-index .index-text p{
+    color: #99A2AA;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 80px;
+    height: 52px;
+}
+.find-index .index-text form{
+    display: flex;
+    align-items: flex-end;
+}
+.find-index .index-text form input[type=text]{
+    border-radius: 10px;
+    height: 78px;
+    width: 31vw;
+    padding-left: 30px;
+    border: 1px solid #E8EBEE;
+    background: #FFF;
+    margin-right: 11px;
+}
+.find-index .index-text form #city-name::placeholder{
+    color: #6C757D;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.find-index .index-text form input[type=submit]{
+    border-radius: 10px;
+    height: 80px;
+    width: 17.3vw;
+    border: 0;
+    color: #0E2F4B;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 80px;
+    background: #FDC13D;
+    transition: all 1s ease-in-out;
+}
+.find-index .index-text form input[type=submit]:hover{
+    background: #fde33d;
+    cursor: pointer;
+    box-shadow: 0 3px 35px 0 rgba(161, 161, 161, 0.2);
+}
