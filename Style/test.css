@@ -94,7 +94,7 @@ header .head-links ul{
     display: flex;
     height: 212px;
     position: absolute;
-    bottom: -50px;
+    bottom: -55px;
     width: 100%;
 }
 .orange-form form{
@@ -109,7 +109,7 @@ header .head-links ul{
     box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
     margin-top: 30px;
     font-size: 16px;
-    padding-left: 35px;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 .orange-form #sending:focus{
@@ -140,7 +140,7 @@ header .head-links ul{
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    width: 100px;
+    width: max-content;
 }
 .four-boxes{
     display: flex;
@@ -171,6 +171,10 @@ header .head-links ul{
 .four-boxes button:hover .border-change-none{
     stroke: black;
 }
+.four-boxes button .icon-book-box{
+    width: 30px;
+    margin-right: 24px;
+}
 .four-boxes button .book-img{
     background-image: url("img/book.svg");
     width: 30px;
@@ -180,7 +184,7 @@ header .head-links ul{
 .four-boxes button .book-img2{
     background-image: url("img/book-after.svg");
     position: absolute;
-    left: 20%;
+    top: 25px;
     width: 30px;
     height: 30px;
     transition: all 1s ease;
@@ -201,7 +205,7 @@ header .head-links ul{
 }
 .four-boxes button .calc-img2{
      position: absolute;
-     left: 20%;
+     top: 25px;
      background-image: url("img/calculator-after.svg");
      width: 30px;
      height: 30px;
@@ -218,7 +222,7 @@ header .head-links ul{
 .services{
     margin-top: 100px;
     display: flex;
-    margin-bottom:70px;
+    margin-bottom:100px;
     width: 100%;
 }
 .services .services-box{
@@ -241,11 +245,14 @@ header .head-links ul{
 .services .left-side p{
     height: 82px;
     margin-top:36px;
+    display: flex;
+    align-items: center;
 }
 .services .left-side #second-text{
     height: 52px;
     margin-bottom: 0;
     margin-top:18px;
+    width: 90%;
 }
 .services .right-side{
     display: flex;
@@ -288,33 +295,41 @@ header .head-links ul{
     line-height: 20px;
     margin-left: 30px;
     height: 17px;
+    display: flex;
 }
 .services .right-side p::after{
-    font-family: "Font Awesome 5 Free" ,sans-serif;
-    content: " ›";
+    content: "›";
     color: #0E2F4B;
     font-size: 18px;
     font-weight: 900;
+    height: 20px;
+    margin-left: 2.66px;
 }
 
 /*Business part*/
 .world-business{
     background-color: #042c4b;
-    height:535px;
+    height:660px;
     padding-top: 120px;
+    box-sizing: border-box;
 }
 .world-business h2{
     color: #F8F8F8;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 36px;
+    margin-top: 31px;
     line-height: 60px;
     width: 70%;
+    height: 117px;
 }
 .world-business p{
     color: #99A2AA;
     margin-bottom: 44px;
     width: 31%;
+    height: 52px;
+    display: flex;
+    align-items: center;
 }
 .world-business button{
     display: flex;
@@ -324,7 +339,8 @@ header .head-links ul{
     align-items: center;
     border-radius: 10px;
     background: #FDC13D;
-    padding: 0;
+    border: 0;
+    margin-left: 15px;
     transition: all 1s ease-in-out;
 }
 .world-business button h2{
@@ -334,6 +350,7 @@ header .head-links ul{
     font-weight: 700;
     line-height: 80px;
     margin: 0;
+    height: 80px;
     width: max-content;
 }
 .world-business button:hover{
@@ -377,13 +394,14 @@ header .head-links ul{
     margin-bottom: 0;
     line-height: 24px;
     height: 19px;
+    display: flex;
 }
 .donation-part .info .more::after{
-    font-family: "Font Awesome 5 Free" ,sans-serif;
     content: " ›";
     color: #0E2F4B;
     font-size: 22px;
     font-weight: 900;
+    margin-left: 2.66px;
 }
 .finance-services{
     margin-top: 121px;
@@ -406,6 +424,9 @@ header .head-links ul{
     display: flex;
     flex-direction: column;
 }
+.finance-services .three-boxes .box-finance .insurance{
+    height: max-content;
+}
 .finance-services .three-boxes h2{
     height: 60px;
     width: 75%;
@@ -420,13 +441,16 @@ header .head-links ul{
     margin-left: 2vw;
     height: 17px;
     margin-top: 13px;
+    display: flex;
+    align-items: center;
 }
 .finance-services .three-boxes p::after{
-    font-family: "Font Awesome 5 Free" ,sans-serif;
-    content: " ›";
+    content: "›";
     color: #0E2F4B;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
+    height: 20px;
+    margin-left: 2.66px;
 }
 .donation-part .finance-services .three-boxes .box-finance a{
     height: 270px;
@@ -448,13 +472,12 @@ header .head-links ul{
     margin-top: 134.5px;
     background-image: url(https://www.ukrposhta.ua/design/web/images/zip-code-block-background.png);
     background-repeat: no-repeat;
-    background-size: 1053px 372px;
+    background-size: 1053px 365px;
     background-position-y: bottom;
-    height: 370px;
+    height: 365px;
 }
 .find-index .index-text{
     padding-top: 31px;
-    padding-left: 15px;
 }
 .find-index .index-text h2{
     color: #F8F8F8;
@@ -468,19 +491,22 @@ header .head-links ul{
     color: #99A2AA;
     margin-bottom: 80px;
     height: 52px;
+    display: flex;
+    align-items: center;
 }
 .find-index .index-text form{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .find-index .index-text form input[type=text]{
     border-radius: 10px;
     height: 78px;
-    width: 31vw;
+    width: 43.247%;
     padding-left: 30px;
     border: 1px solid #E8EBEE;
     background: #FFF;
     margin-right: 11px;
+    box-sizing: border-box;
 }
 .find-index .index-text form #city-name::placeholder{
     color: #6C757D;
@@ -491,7 +517,7 @@ header .head-links ul{
 .find-index .index-text form input[type=submit]{
     border-radius: 10px;
     height: 80px;
-    width: 17.3vw;
+    width: 21.282%;
     border: 0;
     color: #0E2F4B;
     text-align: center;
