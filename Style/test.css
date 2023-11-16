@@ -76,7 +76,6 @@ header .head-links ul{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    padding-left: 5px;
 }
 .orange-box-text h2{
     color: #FFF;
@@ -85,6 +84,8 @@ header .head-links ul{
     line-height: 60px;
     height: 112px;
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 .orange-box-text p{
     margin-top: 34px;
