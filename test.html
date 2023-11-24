@@ -14,18 +14,17 @@
 <body>
     <header class="">
         <div class="head-icon container">
-            <a href="#"><img src="img/site-ua-logo.svg"></a>
+            <a href="#"><img src="img/site-ua-logo.svg" alt="ukr-post-logo"></a>
         </div>
         <div class="head-links container">
             <ul>
-                <a href="#"><li>Трекінг</li></a>
-                <a href="#"><li>Послуги</li></a>
-                <a href="#"><li>Тарифи</li></a>
-                <a href="#"><li>Відділення</li></a>
-                <a href="#"><li>Філателія</li></a>
-                <a href="#"><li>Кар'єра</li></a>
-                <a href="#"><li>Бізнесу</li></a>
-
+                <li><a href="#">Трекінг</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Тарифи</a></li>
+                <li><a href="#">Відділення</a></li>
+                <li><a href="#">Філателія</a></li>
+                <li><a href="#">Кар'єра</a></li>
+                <li><a href="#">Бізнесу</a></li>
             </ul>
         </div>
     </header>
@@ -37,6 +36,7 @@
         </div>
         <div class="orange-form">
             <form class="container">
+                <label for="sending"></label>
                 <input type="text" name="number-of-sending" id="sending" placeholder="Введіть номер відправлення">
                 <div class="four-boxes">
                     <button>
@@ -44,7 +44,7 @@
                             <div class="calc-img form-icon"></div>
                             <div class="calc-img2"></div>
                         </div>
-                        <p class="border-change">Розрахувати</p>
+                        <span class="border-change">Розрахувати</span>
                     </button>
                     <button>
                         <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
@@ -61,7 +61,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                        <p class="border-change full-width">Оформити</p>
+                        <span class="border-change full-width">Оформити</span>
                     </button>
                     <button>
                         <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
@@ -70,14 +70,14 @@
                             <path class="fill-change" d="M15.41 21.34C18.7237 21.34 21.41 18.6537 21.41 15.34C21.41 12.0263 18.7237 9.34003 15.41 9.34003C12.0963 9.34003 9.41 12.0263 9.41 15.34C9.41 18.6537 12.0963 21.34 15.41 21.34Z" fill="white"/>
                             <path class="border-change-none" d="M15.41 17.34C16.5146 17.34 17.41 16.4446 17.41 15.34C17.41 14.2355 16.5146 13.34 15.41 13.34C14.3054 13.34 13.41 14.2355 13.41 15.34C13.41 16.4446 14.3054 17.34 15.41 17.34Z" stroke="#99A2AA" stroke-width="1.5"/>
                         </svg>
-                        <p class="border-change full-width">Знайти індекс</p>
+                        <span class="border-change full-width">Знайти індекс</span>
                     </button>
                     <button >
                         <div class="icon-book-box">
                             <div class="book-img form-icon"></div>
                             <div class="book-img2"></div>
                         </div>
-                        <p class="border-change">Передплатити</p>
+                        <span class="border-change">Передплатити</span>
                     </button>
                 </div>
             </form>
@@ -138,7 +138,7 @@
         <div class="bus-box container"><h2>Започаткуйте успішний міжнародний бізнес!</h2>
             <p class="open-sans-16-400-30h-blue">Продавайте товари за кордон через інтернет — нам довіряють 25 тисяч підприємців</p>
             <button>
-                <h2>Перейти</h2>
+                <span>Перейти</span>
             </button>
         </div>
     </div>
@@ -188,6 +188,7 @@
                 <p class="open-sans-16-400-30h-blue">Поштовий індекс — це код із 5 цифр, який допомагає пришвидшити сортування та доставку відправлень.
                     Поштовий індекс мають всі відділення Укрпошти та всі населені пункти України.</p>
                 <form>
+                    <label for="city-name"></label>
                     <input type="text" name="city-name" id="city-name" placeholder="Введіть назву населеного пункту">
                     <input type="submit" name="city-name" id="find-city" value="Знайти">
                 </form>
